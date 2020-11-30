@@ -1,0 +1,3 @@
+graft roulette
+global-exclude *.py[cod] __pycache__ *.so *.ipynb
+recursive-exclude  roulette/jupy *
