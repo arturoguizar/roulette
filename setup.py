@@ -12,5 +12,5 @@ setup(name='roulette',
       test_suite = 'tests',
       # include_package_data: to install data from MANIFEST.in
       include_package_data=True,
-      scripts=['scripts/roulette-run'],
+      scripts=['scripts/roulette-run', 'scripts/tool-roulette-run'],
       zip_safe=False)

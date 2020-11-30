@@ -24,6 +24,7 @@ clean:
 	@rm -fr build dist
 	@rm -fr roulette-*.dist-info
 	@rm -fr roulette.egg-info
+	@rm -fr out.csv
 
 install:
 	@pip install . -U
@@ -35,6 +36,9 @@ uninstal:
 	@python setup.py install --record files.txt
 	@cat files.txt | xargs rm -rf
 	@rm -f files.txt
+
+uninstalling:
+	@pip uninstall -y roulette
 
 count_lines:
 	@find ./ -name '*.py' -exec  wc -l {} \; | sort -n| awk \

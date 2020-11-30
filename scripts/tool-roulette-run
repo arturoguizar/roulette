@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from random import choice as choisir
+from time import sleep as attendre
+
+from roulette.mytools import roulette
+
+JOUEURS = [
+    'Laurent',
+    'Lou',
+    'Thomas',
+    'Imen',
+    'Paul',
+    'Yohann',
+    'Tristan'
+]
+
+if __name__ == '__main__':
+    joueurs = JOUEURS.copy()
+    sur_le_banc = []
+
+    joueurs, sur_le_banc = roulette(joueurs, sur_le_banc)

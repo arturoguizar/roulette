@@ -7,7 +7,10 @@ from os.path import split
 import pandas as pd
 import datetime
 
+
 pd.set_option('display.width', 200)
+
+
 
 
 def clean_data(data):
