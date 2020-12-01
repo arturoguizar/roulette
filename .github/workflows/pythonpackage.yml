@@ -33,7 +33,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: akhileshns/heroku-deploy@v3.0.4 # This is the action
-     with:
-       heroku_api_key: ${{secrets.15625329-8d73-40ef-9861-14303df95f76}}
-       heroku_app_name: "roulettewagon" # Must be unique in Heroku
-       heroku_email: "arturo.guizar89@gmail.com"
+      with:
+        heroku_api_key: ${{secrets.15625329-8d73-40ef-9861-14303df95f76}}
+        heroku_app_name: "roulettewagon" # Must be unique in Heroku
+        heroku_email: "arturo.guizar89@gmail.com"
